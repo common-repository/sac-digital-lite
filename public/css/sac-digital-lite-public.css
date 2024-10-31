@@ -1,0 +1,290 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .sac--digital--content, .sac--digital--header, footer {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+ }
+
+ .sac--digital__icon {
+     z-index: 9999999 !important;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16);
+     background: #40bdac;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transform: rotate(-50deg);
+     transition: all 160ms ease-in-out;
+     cursor: pointer !important
+ }
+
+ .sac--digital__icon #sac-msng-icon, .sac--digital__icon svg {
+     transition: opacity 160ms ease-in-out
+ }
+
+ .sac--digital__icon #close-icon {
+     width: 19px;
+     height: 19px;
+     top: 21px;
+     left: 21px;
+     opacity: 0;
+     position: absolute
+ }
+
+ .sac--digital__icon #sac-msng-icon {
+     width: 30px;
+     height: 30px;
+     transform: rotate(50deg);
+     opacity: 1
+ }
+
+ .sac--digital__icon.sac--digital-btn__opend #close-icon {
+     opacity: 1
+ }
+
+ .sac--digital__icon.sac--digital-btn__opend #sac-msng-icon {
+     opacity: 0
+ }
+
+ .sac--digital-btn__opend {
+     transform: rotate(0);
+     box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 2px 32px rgba(0, 0, 0, .26)
+ }
+
+ .sac--digital {
+     z-index: 99999 !important;
+     width: 300px;
+     max-width: 300px;
+     background: #f9f9f9;
+     height: auto;
+     border-radius: 10px;
+     position: fixed;
+     bottom: 100px;
+     right: 20px;
+     transform: translateY(50px);
+     opacity: 0;
+     pointer-events: none;
+     -webkit-transition: transform 160ms ease-in-out, opacity 160ms ease-in-out;
+     transition: transform 160ms ease-in-out, opacity 160ms ease-in-out;
+     box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
+ }
+
+ .sac--digital--close {
+     width: 12px;
+     height: 12px;
+     position: absolute;
+     right: 16px;
+     top: 15px;
+     cursor: pointer
+ }
+
+ .sac--digital__opend {
+     pointer-events: all;
+     transform: translateY(0);
+     opacity: 1
+ }
+
+ .sac--digital--header {
+     height: 50px;
+     background: #40bdac;
+     padding: 0 0 0 40px;
+     display: flex;
+     border-radius: 10px 10px 0 0;
+     color: #fff;
+     font-size: 13px;
+     line-height: 23px;
+     position: relative
+ }
+
+ .sac--digital--text{
+     height: 20px;
+     margin: 15px 0 !important;
+     color: white;
+ }
+
+ .sac--digital--text svg {
+     height: 20px;
+     width: 20px;
+     left: 10px;
+     top: 13px;
+     position: absolute
+ }
+
+ .sac--digital--content {
+     position: relative;
+     height: auto;
+     margin: 10px 0;
+     color: #000;
+     width: 300px;
+     text-align: center;
+ }
+
+ .sac--digital--form-control, .sac--digital--form-title {
+     width: 260px;
+     padding: 5px 0px;
+     text-align: left;
+     margin: 0 auto;
+ }
+
+ .sac--digital--form-control > input, .sac--digital--form-control > textarea {
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+     width: 250px !important;
+     border: 2px solid #f1f1f1 !important;
+     padding: 10px 5px !important;
+     font-size: 12px;
+     margin-top: 10px;
+     resize: none !important;
+     -webkit-border-radius: 5px !important;
+     -moz-border-radius: 5px !important;
+     border-radius: 5px !important;
+ }
+
+ .sac--digital--form-control > textarea{
+     height: 50px;
+ }
+
+ .sac--digital--form-title {
+     padding: 10px 0;
+     text-align: center;
+     margin: 0 auto;
+ }
+
+ .sac--digital--form-control > input, .sac--digital--form-control > label {
+     display: block !important
+ }
+
+ #sac--digital--step2, .sac--digital--alert {
+     display: none
+ }
+
+ .sac--digital--form-control > label {
+     color: #989696;
+     font-size: 12px !important;
+     font-weight: 400 !important
+ }
+
+ .sac--digital--form-control select{
+
+   background-color: #FFFFFF;
+   border: 1px solid #E3E3E3;
+   border-radius: 4px;
+   color: #565656;
+   padding: 7px 12px;
+   height: 38px;
+   max-width: 100%;
+   display: block;
+   width: 100%;
+   font-size: 14px;
+   line-height: 1.42857143;
+ }
+
+ .sac--digital--form-title > b {
+     color: #828282;
+     font-size: 13px !important
+ }
+
+ .sac--digital--btn {
+     background: #40bdac;
+     color: #fff;
+     text-transform: uppercase;
+     border: 0;
+     padding: 8px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 10px;
+     text-decoration: none
+ }
+
+ .sac--digital--alert-error, .sac--digital--alert-warning {
+     width: 250px;
+     margin: 10px auto;
+     font-size: 12px;
+     color: #fff;
+     padding: 5px;
+     border-radius: 5px
+ }
+
+ .sac--digital--btn:disabled {
+     background: rgba(64, 189, 172, .5)
+ }
+
+ .sac--digital--alert-error {
+     background: rgba(226, 86, 118, .8)
+ }
+
+ .sac--digital--alert-warning {
+     background: rgba(228, 192, 91, .8)
+ }
+
+ .sac--digital--center {
+     text-align: center
+ }
+
+ .sac--digital-mob {
+     position: fixed !important;
+     top: 0 !important;
+     left: 0 !important;
+     border-radius: 0 !important;
+     width: 100% !important;
+     max-width: 100% !important;
+     min-height: 100% !important;
+     z-index: 99999 !important;
+     padding-bottom: 20px !important;
+     overflow: scroll !important;
+ }
+
+ .sac--digital-mob .sac--digital--header {
+     -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+     border-radius: 0 !important
+ }
+
+ .sac--digital-mob .sac--digital--content {
+     width: 90% !important;
+     margin: 15px auto !important
+ }
+
+ .sac--digital-mob .sac--digital--form-control, .sac--digital-mob .sac--digital--form-title {
+     width: 100% !important;
+     padding: 0 !important;
+     margin-bottom: 20px
+ }
+
+ .sac--digital-mob .sac--digital--form-control > input, .sac--digital-mob .sac--digital--form-control > textarea {
+     width: 100%!important;
+     padding: 3px 0px !important;
+     display: block !important;
+     height: 30px !important;
+ }
+
+ .sac--digital-mob .sac--digital--form-control > textarea{
+     height: 80px;
+ }
+
+ @media only screen and (max-width: 480px) {
+     .sac--digital__icon {
+         width: 50px;
+         height: 50px
+     }
+
+     .sac--digital__icon #sac-msng-icon {
+         width: 25px;
+         height: 25px
+     }
+
+     .sac--digital__icon #close-icon {
+         width: 18px;
+         height: 16px;
+         top: 17px;
+         left: 16px
+     }
+ }
